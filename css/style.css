@@ -6,6 +6,7 @@
     padding-top: 250px;
     color: rgb(255, 217, 0);
     box-sizing: border-box;
+   
 }
 .headerset h2{
     font-size: 42px;
@@ -345,4 +346,8 @@ a {
 
 a:hover {
   color: rgb(60, 255, 0)
+}
+.star{
+  color: red;
+  
 }

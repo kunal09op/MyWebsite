@@ -10,22 +10,14 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script src="js/fun.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  ></script>
+   
+    
     <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
   </head>
   <body class="bg-light">
@@ -299,7 +291,7 @@
           ></iframe>
         </div>
         <div class="col-md-5 mb-md-0 mb-5">
-          <form id="contact-form">
+          <form id="contact-form" >
             <!--Grid row-->
             <div class="row">
               <!--Grid column-->
@@ -307,11 +299,11 @@
                 <div class="md-form mb-0">
                   <input
                     type="text"
-                    id="name"
+                    id="name1"
                     name="name"
                     class="form-control"
                   />
-                  <label for="name" class="">Your name</label>
+                  <label for="name" class="">Your name <span class="star"><b>*</b></span></label><br>
                   <span class="name_error" id="name_error_message"></span>
                 </div>
               </div>
@@ -326,7 +318,7 @@
                     name="email"
                     class="form-control"
                   />
-                  <label for="email" class="">Your email</label>
+                  <label for="email" class="">Your email <span class="star"><b>*</b></span></label><br>
                   <span class="email_error" id="email_error_message"></span>
                 </div>
               </div>
@@ -344,7 +336,7 @@
                     name="subject"
                     class="form-control"
                   />
-                  <label for="subject" class="">Subject</label>
+                  <label for="subject" class="">Subject <span class="star"><b>*</b></span></label><br>
                   <span class="sub_error" id="sub_error_message"></span>
                 </div>
               </div>
@@ -368,11 +360,12 @@
               </div>
             </div>
             <!--Grid row-->
-          </form>
+          
 
           <div class="text-center text-md-left">
-            <a class="btn btn-primary text-white">Send</a>
+            <input class="btn btn-primary text-white" onsubmit="submit()" type="submit" value="Send">
           </div>
+        </form>
           <div class="status"></div>
         </div>
         <!--Grid column-->
@@ -490,5 +483,7 @@ Xceedance leverages vast insurance and technology expertise to facilitate, autom
         </div>
       </div>
     </footer>
+    
   </body>
+  <script type="text/javascript" src="js/fun.js"></script>
 </html>
