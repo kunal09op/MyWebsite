@@ -1,11 +1,6 @@
 .bgimg{
     
-    background-image: url('../img/office.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    opacity: 1;
-    width: 100%;
-    height: 670px;
+    
 }
 .headerset{
     padding-top: 250px;
@@ -265,4 +260,89 @@ box-shadow: 10px 10px 147px -46px rgba(0,0,0,0.75);
 .item:hover span{
   opacity: 1;
   transition: 0.5s;
+}
+ body {
+  color: #fff;
+  background: linear-gradient(-45deg,#EE7752,#E73C7E,#2de703,#23D5AB);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+} 
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+  
+}
+
+.testi .container {
+  max-width: 950px
+}
+
+.testi .card {
+  border-radius: 1rem;
+  box-shadow: 0px -10px 0px rgb(151, 248, 6)
+}
+
+@media(max-width:767px) {
+  .testi .card {
+      margin: 1rem 0.7rem 1rem;
+      max-width: 80vw
+  }
+}
+
+.testi img {
+  width: 6.2rem;
+  border-radius: 5rem;
+  margin: 1.3rem auto 1rem auto
+}
+
+.testi .col-md-4 {
+  padding: 0 0.5rem
+}
+
+.testi .card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'IM Fell French Canon SC'
+}
+
+.testi .card-text {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgb(82, 81, 81);
+  line-height: 1.4rem
+}
+
+.testi .footer {
+  border-top: none;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 2rem 0 1.4rem 0;
+  font-family: 'Varela Round'
+}
+
+#name {
+  font-size: 0.8rem;
+  font-weight: bold
+}
+
+#position {
+  font-size: 0.7rem
+}
+
+a {
+  color: rgb(151, 248, 6);
+  font-weight: bold
+}
+
+a:hover {
+  color: rgb(60, 255, 0)
 }

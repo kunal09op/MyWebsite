@@ -10,6 +10,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="js/fun.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -29,7 +30,7 @@
   </head>
   <body class="bg-light">
     <div class="bgimg">
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark fix" >
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark container-fluid" style="position: fixed;z-index: 2;" >
         <div id="home" class="container">
           <a href="" class="navbar-brand text-warning font-weight-bold"
             >My Website</a
@@ -74,6 +75,9 @@
                 <a href="#portfolio" class="nav-link text-white"> Portfolio </a>
               </li>
               <li class="nav-item">
+                <a href="#Testimonials" class="nav-link text-white"> Testimonials </a>
+              </li>
+              <li class="nav-item">
                 <a href="#contactus" class="nav-link text-white"> Contact Us </a>
               </li>
             </ul>
@@ -86,7 +90,7 @@
         <button class="btn btn-warning text-white btn-lg">EXPLORE</button>
       </div>
     </div>
-    <section class="services py-5 bg-light">
+    <section class="services py-5 ">
       <div class="container py-5">
         <h1 id="services" class="text-center pb-5" > Our Services</h1>
         <div class="row pb-3">
@@ -229,6 +233,47 @@
         </div>
       </div>
     </section>
+   
+
+
+<section class="testi">
+  
+  <div class="container">
+    <h1 id="Testimonials" class="text-center">Testimonials</h1><br><br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer"> <span id="name">Micheal Smith<br></span> <span id="position">CEO of <a href="#">Google.com</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/Uz4FjGZ.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer"> <span id="name">Angellia Miller<br></span> <span id="position">CEO of <a href="#">Facebook.com</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto ">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/udGH5tO.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer"> <span id="name">Christina Williams<br></span> <span id="position">UX Designer at <a href="#">Youtube.com</a></span> </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<br><br>
+
 
     <section class="mb-4 container">
       <!--Section heading-->
@@ -267,6 +312,7 @@
                     class="form-control"
                   />
                   <label for="name" class="">Your name</label>
+                  <span class="name_error" id="name_error_message"></span>
                 </div>
               </div>
               <!--Grid column-->
@@ -281,6 +327,7 @@
                     class="form-control"
                   />
                   <label for="email" class="">Your email</label>
+                  <span class="email_error" id="email_error_message"></span>
                 </div>
               </div>
               <!--Grid column-->
@@ -298,6 +345,7 @@
                     class="form-control"
                   />
                   <label for="subject" class="">Subject</label>
+                  <span class="sub_error" id="sub_error_message"></span>
                 </div>
               </div>
             </div>
