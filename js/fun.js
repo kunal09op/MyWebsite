@@ -1,4 +1,14 @@
 $(function () {
+  $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+    
     $("#name_error_message").hide();
     $("#email_error_message").hide();
     $("#sub_error_message").hide();
@@ -26,7 +36,6 @@ $(function () {
         $("#name_error_message").show();
         $("#name1").css("border-color","red");
         $("#name_error_message").css("color","red","font-weigth","bold");
-        
         name_error = true;
       }
     }
