@@ -347,10 +347,10 @@ a:hover {
   color: red;
   
 }
-.fixed {
+/* .fixed {
 	position: fixed;
 	top: 0;
-	height: 40px;
-  background-color: rgb(255, 0, 212);
+	height: 85px;
+  overflow: inherit;
 	z-index: 2;
-}
+} */

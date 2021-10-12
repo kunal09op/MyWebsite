@@ -1,11 +1,12 @@
 $(function () {
   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
+	   var navHeight = $( window ).height() - 10;
 			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
+				 $(".navbar").hide();
+
 			 }
 			 else {
-				 $('nav').removeClass('fixed');
+				$(".navbar").show();
 			 }
 		});
     
